@@ -18,11 +18,12 @@ pipeline {
         }
 stage('Deliver') {
     steps {
-        dir('jenkins/scripts') {
-            sh './deliver.sh'
+        dir('.') {
+            sh 'bash jenkins/scripts/deliver.sh'
         }
     }
 }
+
 
     }
 }
