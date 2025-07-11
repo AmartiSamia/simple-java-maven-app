@@ -23,6 +23,11 @@ stage('Deliver') {
         }
     }
 }
+stage('Complete'){
+    steps{
+        echo 'Job completed successfully!'
+    }
+}
 
 
     }
